@@ -34,3 +34,13 @@ git commit -m "Added index.html" -m "some description"
 
 to merge to main run :
 git push
+
+Generate SSH key by running below command in local terminal :
+ssh-keygen -t rsa -b 1996 -C "github@mail.com"
+
+the above command generates 2 files. .pub file is public file that can be shared to github , the other should not be shared (its private). It is proof that it created the pub key.
+
+The below command prints the key:
+cat testkey.pub 
+
+To upload the key, select the key to copy , the other way is to : pbcopy < ~/testkey.pub
